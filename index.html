@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugo de Sábila 1L - Organika Bio Market</title>
+    <style>
+        /* Reset y Variables de Color Verde / Blanco */
+        :root {
+            --verde-principal: #2e7d32;
+            --verde-oscuro: #1b5e20;
+            --verde-whatsapp: #25d366;
+            --verde-whatsapp-hover: #1ebc57;
+            --blanco: #ffffff;
+            --fondo-claro: #f4f7f4;
+            --texto-principal: #1b331e;
+            --gris-borde: #e0e8e0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--fondo-claro);
+            color: var(--texto-principal);
+            line-height: 1.6;
+        }
+
+        /* Encabezado con Logo */
+        header {
+            background-color: var(--blanco);
+            border-bottom: 3px solid var(--verde-principal);
+            padding: 15px 20px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        header .logo {
+            max-height: 65px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* Contenedor Principal */
+        .container {
+            max-width: 950px;
+            margin: 30px auto;
+            padding: 30px;
+            background: var(--blanco);
+            border-radius: 12px;
+            border: 1px solid var(--gris-borde);
+            box-shadow: 0 4px 15px rgba(46, 125, 50, 0.06);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 35px;
+        }
+
+        /* Galería e Imagen del Producto */
+        .product-image {
+            flex: 1 1 380px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--blanco);
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid var(--gris-borde);
+        }
+
+        .product-image img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        /* Detalles del Producto */
+        .product-details {
+            flex: 1 1 380px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-title {
+            font-size: 1.8rem;
+            color: var(--verde-oscuro);
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .price {
+            font-size: 1.8rem;
+            color: var(--verde-principal);
+            font-weight: 800;
+            margin: 10px 0 15px 0;
+        }
+
+        .description {
+            color: #3d5240;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        /* Opciones del Formulario */
+        .option-group {
+            margin-bottom: 18px;
+        }
+
+        .option-group label {
+            display: block;
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: var(--verde-oscuro);
+        }
+
+        .option-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1.5px solid var(--gris-borde);
+            border-radius: 6px;
+            font-size: 1rem;
+            background-color: var(--blanco);
+            color: var(--texto-principal);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .option-group select:focus {
+            border-color: var(--verde-principal);
+        }
+
+        /* Botón de WhatsApp */
+        .btn-whatsapp {
+            display: block;
+            width: 100%;
+            background-color: var(--verde-whatsapp);
+            color: var(--blanco);
+            text-align: center;
+            padding: 14px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 10px;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.25);
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: var(--verde-whatsapp-hover);
+        }
+
+        .btn-whatsapp:active {
+            transform: scale(0.99);
+        }
+
+        /* Sección de Beneficios */
+        .info-section {
+            margin-top: 25px;
+            padding-top: 18px;
+            border-top: 1px solid var(--gris-borde);
+        }
+
+        .info-section h3 {
+            color: var(--verde-principal);
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .info-section ul {
+            list-style-position: inside;
+            color: #4a634d;
+            font-size: 0.95rem;
+        }
+
+        .info-section li {
+            margin-bottom: 6px;
+        }
+
+        /* Pie de Página Verde */
+        footer {
+            background-color: var(--verde-oscuro);
+            color: var(--blanco);
+            margin-top: 40px;
+            padding: 25px 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 6px 0;
+            opacity: 0.95;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Logo de Organika Bio Market -->
+        <img src="https://organikabiomarket.com/wp-content/uploads/2021/08/logo-organika.png" alt="Organika Bio Market" class="logo">
+    </header>
+
+    <main class="container">
+        <!-- Imagen del Producto -->
+        <div class="product-image">
+            <img src="https://via.placeholder.com/400x400/ffffff/2e7d32?text=Extracto+de+Sabila+1L" alt="Extracto de Sábila 1L">
+        </div>
+
+        <!-- Panel de Compra y Detalle -->
+        <div class="product-details">
+            <h1 class="product-title">Jugo / Extracto de Sábila 1 Litro</h1>
+            <div class="price">Bs. 45.00</div>
+            
+            <p class="description">
+                Bebida natural de aloe vera para fortalecer el sistema digestivo, favorecer la regeneración gástrica y mantener una excelente hidratación.
+            </p>
+
+            <form id="orderForm" onsubmit="event.preventDefault();">
+                <div class="option-group">
+                    <label for="variante">Selecciona la presentación:</label>
+                    <select id="variante">
+                        <option value="Con Azúcar">Con Azúcar</option>
+                        <option value="Con Stevia (Sin Calorías)">Con Stevia</option>
+                    </select>
+                </div>
+
+                <div class="option-group">
+                    <label for="cantidad">Cantidad:</label>
+                    <select id="cantidad">
+                        <option value="1">1 Unidad</option>
+                        <option value="2">2 Unidades</option>
+                        <option value="3">3 Unidades</option>
+                        <option value="4">4 Unidades</option>
+                        <option value="5">5 Unidades</option>
+                    </select>
+                </div>
+
+                <a href="#" class="btn-whatsapp" onclick="enviarPedido()">Pedir por WhatsApp</a>
+            </form>
+
+            <div class="info-section">
+                <h3>Beneficios principales</h3>
+                <ul>
+                    <li>100% Extracto natural de Aloe Vera.</li>
+                    <li>Soporte digestivo y regenerativo.</li>
+                    <li>Disponible en versión tradicional y sin calorías.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p><strong>Ubicación:</strong> Calle René Moreno #524, Santa Cruz de la Sierra, Bolivia</p>
+        <p><strong>Contacto / WhatsApp:</strong> +591 78000000</p>
+        <p>&copy; 2026 Organika Bio Market - Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function enviarPedido() {
+            const variante = document.getElementById('variante').value;
+            const cantidad = document.getElementById('cantidad').value;
+            
+            // Reemplazar por el número de WhatsApp oficial
+            const telefono = "59178000000"; 
+
+            const mensaje = `Hola Organika Bio Market, me gustaría pedir ${cantidad} unidad(es) de Jugo de Sábila 1L (${variante}).`;
+            const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+            
+            window.open(url, '_blank');
+        }
+    </script>
+
+</body>
+</html>
